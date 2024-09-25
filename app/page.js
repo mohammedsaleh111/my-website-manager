@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react';
 import { db } from '../lib/firebase';
 import { collection, addDoc, getDocs, updateDoc, doc, deleteDoc } from 'firebase/firestore';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const LOCAL_STORAGE_KEY = 'links';
 
@@ -134,7 +136,7 @@ export default function Home() {
             className={`border p-4 cursor-pointer transition-transform duration-1000 ${activeIndex === index ? 'scale-150' : ''}`} // إضافة التحويل CSS
             onClick={() => handleCardClick(index, link)}
           >
-            <img
+            <Image
               src={`https://www.google.com/s2/favicons?domain=${link.url}`}
               alt={`${link.name} favicon`}
               className="w-8 h-8 mb-2"
