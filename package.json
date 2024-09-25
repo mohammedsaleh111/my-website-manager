@@ -1,0 +1,26 @@
+{
+  "name": "my-website-manager",
+  "version": "0.1.0",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "electron": "electron ."
+  },
+  "dependencies": {
+    "firebase": "^10.13.2",
+    "next": "^14.2.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
